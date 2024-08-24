@@ -2,12 +2,20 @@
 <head>
     <script src="ocr.js"></script>
     <link rel="stylesheet" type="text/css" href="ocr.css">
+    <style>
+        h1 {
+            color: orange;
+        }
+        body {
+          background-color: #F5DEB3; /* Dull yellow */
+        }
+    </style>
 </head>
 <body onload="ocrDemo.onLoadFunction()">
     <div id="main-container" style="text-align: center;">
-        <h1>OCR Demo</h1>
         <canvas id="canvas" width="200" height="200"></canvas>
         <form name="input">
+            <h1> OCR Demo </h1>
             <p>Digit: <input id="digit" type="text"> </p>
             <input type="button" value="Train" onclick="ocrDemo.train()">
             <input type="button" value="Test" onclick="ocrDemo.test()">
